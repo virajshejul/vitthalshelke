@@ -205,7 +205,7 @@ button {
     left: 0;
     width: 100%;
     padding: 2rem var(--container-padding);
-    z-index: var(--z-nav);
+    z-index: 9999;
     background: transparent;
     transition: var(--transition-fast);
 }
@@ -269,13 +269,17 @@ button {
     flex-direction: column;
     gap: 6px;
     cursor: pointer;
+    z-index: 10000;
+    position: relative;
+    padding: 10px;
 }
 
 .menu-toggle span {
-    width: 25px;
+    width: 28px;
     height: 2px;
     background: var(--color-accent);
     transition: var(--transition-fast);
+    display: block;
 }
 
 .menu-toggle.active span:first-child {
@@ -299,7 +303,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    z-index: var(--z-mobile-menu);
+    z-index: 9998;
     transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -334,6 +338,12 @@ button {
     
     .menu-toggle {
         display: flex;
+        position: relative;
+        z-index: 10001;
+    }
+    
+    .nav.scrolled {
+        padding: 1rem var(--container-padding);
     }
 }
 
