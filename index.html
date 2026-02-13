@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium photography portfolio - Capturing moments with cinematic vision">
+    <title>Vitthal Shelke Photography</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Premium Typography - Unbounded for display, Manrope for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Main Styles -->
+    
+</head>
+<body>
+    
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="loader-line"></div>
+            <span class="loader-text">LOADING</span>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Vitthal Shelke Photography</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">HOME</a>
+                <a href="works.html" class="nav-link">WORKS</a>
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <a href="contact.html" class="nav-link">CONTACT</a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.html" class="mobile-link">HOME</a>
+        <a href="works.html" class="mobile-link">WORKS</a>
+        <a href="about.html" class="mobile-link">ABOUT</a>
+        <a href="contact.html" class="mobile-link">CONTACT</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">CINEMATIC</span>
+                    <span class="title-line">MOMENTS</span>
+                </h1>
+                <p class="hero-subtitle">PHOTOGRAPHY & VISUAL STORYTELLING</p>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">SCROLL</span>
+        </div>
+    </section>
+
+    <!-- Featured Work Section -->
+    <section class="featured-work">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">SELECTED WORKS</h2>
+            </div>
+            
+            <div class="featured-grid">
+                <div class="featured-item" data-cursor="VIEW">
+                    <a href="works.html">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1200&h=1600&fit=crop" alt="Portrait Series" loading="lazy">
+                        </div>
+                        <div class="featured-info">
+                            <h3>PORTRAIT SERIES</h3>
+                            <span class="featured-year">2024</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="featured-item" data-cursor="VIEW">
+                    <a href="works.html">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1600&h=900&fit=crop" alt="Urban Dreams" loading="lazy">
+                        </div>
+                        <div class="featured-info">
+                            <h3>URBAN DREAMS</h3>
+                            <span class="featured-year">2024</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="featured-item" data-cursor="VIEW">
+                    <a href="works.html">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1529232356377-57971f020a94?w=1200&h=1600&fit=crop" alt="Monochrome" loading="lazy">
+                        </div>
+                        <div class="featured-info">
+                            <h3>MONOCHROME</h3>
+                            <span class="featured-year">2023</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="featured-item" data-cursor="VIEW">
+                    <a href="works.html">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1600&h=900&fit=crop" alt="Landscapes" loading="lazy">
+                        </div>
+                        <div class="featured-info">
+                            <h3>LANDSCAPES</h3>
+                            <span class="featured-year">2023</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="works.html" class="cta-button">
+                    <span>EXPLORE ALL WORKS</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy">
+        <div class="container">
+            <div class="philosophy-content">
+                <span class="section-number">02</span>
+                <h2 class="philosophy-title">VISUAL PHILOSOPHY</h2>
+                <p class="philosophy-text">
+                    Every frame tells a story. Through the lens, I capture the essence of fleeting moments, 
+                    transforming ordinary scenes into extraordinary visual narratives. My work is defined by 
+                    a minimalist aesthetic, dramatic contrasts, and an unwavering commitment to authenticity.
+                </p>
+                <a href="about.html" class="text-link">
+                    LEARN MORE ABOUT MY APPROACH
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-copyright">© 2024 ALEXANDER NOIR</p>
+                    <p class="footer-location">BASED IN NEW YORK</p>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:hello@alexandernoir.com" class="footer-email">vitthalshelkeshelke@gmail.com</a>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link">INSTAGRAM</a>
+                        <a href="#" class="social-link">BEHANCE</a>
+                        <a href="#" class="social-link">VSCO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
